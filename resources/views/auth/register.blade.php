@@ -66,9 +66,18 @@
                                 <button type="submit" class="btn btn-primary">
                                     Register
                                 </button>
-                                <a href="{{url('auth/google')}}" class="btn btn-primary">Register with google</a>
+                               
                             </div>
                         </div>
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                                Register with
+                                <a href="{{url('auth/google')}}" class="btn btn-primary">Google</a>
+                                <!-- <a href="{{url('auth/facebook')}}" class="btn btn-primary">Facebook</a> -->
+                                <a href="{{ url('/auth/facebook') }}" class="btn btn-facebook"><i class="fa fa-facebook"></i> Facebook</a>
+                            </div>
+                        </div>
+                        
                     </form>
                 </div>
             </div>
